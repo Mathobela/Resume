@@ -1,0 +1,18 @@
+<div class="container-fluid mb-0">
+<app-headings
+  [icon]= "icon"
+  [sectionHeading]="sectionHeading">
+</app-headings>
+
+<div class="row" style="margin-bottom: 0px;" *ngFor = "let techStackAndTool of techStackAndTools">
+  <div class="col-md-4">
+    <p class="small">{{ techStackAndTool.techStack}}</p>
+  </div>
+  <div class="col-md-4">
+    <p class="small">{{ techStackAndTool.frameworks}}</p>
+  </div>
+  <div class="col-md-4">
+    <p class="small">{{ techStackAndTool.tools}}</p>
+  </div>
+</div>
+</div>

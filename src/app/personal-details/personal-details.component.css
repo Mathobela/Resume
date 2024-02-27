@@ -1,0 +1,13 @@
+/* Add this to your component's CSS file or styles.scss/styles.css */
+
+.row-spacing {
+  margin-bottom: 5px; /* Adjust the value as needed */
+}
+
+.link-color {
+  color: lightslategray;
+}
+
+.col-9 {
+  color: lightslategray;
+}

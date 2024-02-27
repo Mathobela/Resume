@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <app-headings [icon]="icon" [sectionHeading]="sectionHeading"></app-headings>
+
+  <div class="row row-spacing">
+    <div class="col-3">
+      <h6>Name:</h6>
+    </div>
+    <div class="col-9">
+      <h6>{{ personalDetails?.name }}</h6>
+    </div>
+  </div>
+
+  <div class="row row-spacing">
+    <div class="col-3">
+      <h6>Cell:</h6>
+    </div>
+    <div class="col-9">
+      <h6>{{ personalDetails?.cell }}</h6>
+    </div>
+  </div>
+
+  <div class="row row-spacing">
+    <div class="col-3">
+      <h6>Email:</h6>
+    </div>
+    <div class="col-md-9">
+      <h6><a href="mailto:{{ personalDetails?.email }}" class="link-color">{{ personalDetails?.email }}</a></h6>
+    </div>
+  </div>
+
+  <div class="row row-spacing">
+    <div class="col-3">
+      <h6>GitHub:</h6>
+    </div>
+    <div class="col-9">
+      <h6><a href="{{ personalDetails?.gitHub }}" class="link-color" target="_blank">{{ personalDetails?.gitHub }}</a></h6>
+    </div>
+  </div>
+
+  <div class="row row-spacing">
+    <div class="col-3">
+      <h6>LinkedIn:</h6>
+    </div>
+    <div class="col-9">
+      <h6><a href="{{ personalDetails?.linkedIn }}" class="link-color" target="_blank">{{ personalDetails?.linkedIn }}</a></h6>
+    </div>
+  </div>
+</div>
